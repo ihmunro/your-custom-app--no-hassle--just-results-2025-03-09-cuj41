@@ -1,63 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Custom App | No Hassle, Just Results</title>
     <meta name="description" content="Tailored Apps for Your Unique Needs - Easy Onboarding, Continuous Updates, User-Friendly Design">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://ihmunro.github.io/your-custom-app--no-hassle--just-results-2025-03-09-cuj41" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     AiBizBots
                 </a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4 space-y-4" @click.away="isOpen = false">
-                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">About</a>
+                <a href="#faq" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center pt-24 pb-32 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        Your Custom App, No Hassle, Just Results
+                        Transform Your Business with Custom AI Solutions
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Tailored Apps for Your Unique Needs
+                        Streamline operations, boost efficiency, and drive growth with our tailored AI applications. Experience the future of business automation today.
                     </p>
                     <a href="https://aibizbots4u.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        Get Started Now
+                        Start Your Digital Transformation
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 bg-gray-800">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Powerful Features for Your Success
+                    Enterprise-Grade Features for Modern Business
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="bg-gray-900 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -66,8 +87,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Easy Onboarding</h3>
-                        <p class="text-gray-400">Get started quickly with our streamlined onboarding process designed for efficiency.</p>
+                        <h3 class="text-xl font-semibold mb-4">Intelligent Automation</h3>
+                        <p class="text-gray-400">Leverage advanced AI algorithms to automate complex business processes, reducing manual work by up to 80% and improving accuracy to 99.9%.</p>
                     </div>
                     <div class="bg-gray-900 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
@@ -75,8 +96,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Continuous Updates</h3>
-                        <p class="text-gray-400">Stay ahead with regular updates and improvements to your custom application.</p>
+                        <h3 class="text-xl font-semibold mb-4">Real-Time Analytics</h3>
+                        <p class="text-gray-400">Access comprehensive business insights through our advanced analytics dashboard, featuring customizable reports and predictive modeling.</p>
                     </div>
                     <div class="bg-gray-900 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
@@ -84,75 +105,217 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">User-Friendly Design</h3>
-                        <p class="text-gray-400">Intuitive interfaces that make using your custom app a breeze for everyone.</p>
+                        <h3 class="text-xl font-semibold mb-4">Seamless Integration</h3>
+                        <p class="text-gray-400">Connect with over 100+ popular business tools and platforms through our secure API infrastructure, ensuring smooth data flow across your organization.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Benefits That Drive Success
+                    Measurable Business Impact
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative bg-gray-800 rounded-2xl p-8 group-hover:bg-opacity-90 transition-all duration-300">
-                            <h3 class="text-xl font-semibold mb-4">Save Money</h3>
-                            <p class="text-gray-400">Reduce operational costs and maximize your ROI with our efficient solutions.</p>
+                            <h3 class="text-xl font-semibold mb-4">ROI Optimization</h3>
+                            <p class="text-gray-400">Average 300% return on investment within the first year through improved efficiency and reduced operational costs.</p>
                         </div>
                     </div>
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative bg-gray-800 rounded-2xl p-8 group-hover:bg-opacity-90 transition-all duration-300">
-                            <h3 class="text-xl font-semibold mb-4">Focus on Your Business</h3>
-                            <p class="text-gray-400">Let us handle the technical details while you concentrate on growing your business.</p>
+                            <h3 class="text-xl font-semibold mb-4">Time Recovery</h3>
+                            <p class="text-gray-400">Save up to 40 hours per week by automating repetitive tasks and streamlining complex workflows.</p>
                         </div>
                     </div>
                     <div class="relative group">
                         <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative bg-gray-800 rounded-2xl p-8 group-hover:bg-opacity-90 transition-all duration-300">
-                            <h3 class="text-xl font-semibold mb-4">Increase Productivity</h3>
-                            <p class="text-gray-400">Streamline your workflows and boost team efficiency with our custom solutions.</p>
+                            <h3 class="text-xl font-semibold mb-4">Error Reduction</h3>
+                            <p class="text-gray-400">Decrease processing errors by up to 95% through intelligent automation and validation systems.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Success Stories
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"AiBizBots transformed our customer service operations. The AI-powered chatbot handles 75% of inquiries automatically, reducing response time from hours to seconds. Our team now focuses on complex cases, improving overall satisfaction by 45%."</p>
+                        <div>
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p class="text-gray-400">Customer Success Director, TechCorp</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"The data analytics dashboard revolutionized our decision-making process. We can now predict market trends with 89% accuracy and adjust our strategy in real-time. ROI increased by 250% in just 6 months."</p>
+                        <div>
+                            <p class="font-semibold">Michael Chen</p>
+                            <p class="text-gray-400">Analytics Manager, DataDrive Solutions</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"Implementation was smooth and the support team was exceptional. Our workflow automation project completed 2 weeks ahead of schedule, and we've already automated 60% of our manual processes."</p>
+                        <div>
+                            <p class="font-semibold">Emily Rodriguez</p>
+                            <p class="text-gray-400">Operations Director, GlobalTech Inc</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"The AI-powered inventory management system has eliminated stockouts completely and reduced carrying costs by 35%. Integration with our existing ERP was seamless."</p>
+                        <div>
+                            <p class="font-semibold">David Thompson</p>
+                            <p class="text-gray-400">Supply Chain Manager, Retail Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Our Story
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Founded in 2020, AiBizBots emerged from a simple vision: making enterprise-grade AI technology accessible to businesses of all sizes. Our founders, seasoned tech entrepreneurs and AI specialists, recognized that while artificial intelligence was revolutionizing large corporations, smaller businesses were being left behind due to complex implementation requirements and prohibitive costs.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Today, we're driven by our core values of innovation, accessibility, and customer success. Our mission is to democratize AI technology, providing scalable, user-friendly solutions that deliver measurable results. With a team of over 50 experts and serving 1000+ satisfied clients worldwide, we're committed to helping businesses achieve their digital transformation goals through cutting-edge AI solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
         <section id="faq" class="py-24 bg-gray-800" x-data="{selected:null}">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                     Frequently Asked Questions
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-4">
-                    <div class="bg-gray-900 rounded-xl">
+                    <div class="bg-gray-900 rounded-xl hover:shadow-lg transition-all duration-300">
                         <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
-                            <span class="font-semibold">How long does the onboarding process take?</span>
+                            <span class="font-semibold">How long does implementation typically take?</span>
                             <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div x-show="selected == 1" class="p-6 pt-0">
-                            <p class="text-gray-400">Our streamlined onboarding process typically takes 1-2 weeks, depending on your specific requirements and project scope.</p>
+                            <p class="text-gray-400">Most implementations are completed within 2-4 weeks, depending on the complexity of your requirements. Our streamlined process includes initial assessment, customization, testing, and team training to ensure a smooth transition.</p>
                         </div>
                     </div>
-                    <!-- Add more FAQ items as needed -->
+
+                    <div class="bg-gray-900 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
+                            <span class="font-semibold">What kind of support do you provide?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 2" class="p-6 pt-0">
+                            <p class="text-gray-400">We offer 24/7 technical support, regular maintenance updates, and dedicated account management. Our team provides ongoing training, optimization recommendations, and quarterly business reviews to ensure you're getting maximum value.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
+                            <span class="font-semibold">How secure is your platform?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 3" class="p-6 pt-0">
+                            <p class="text-gray-400">We maintain the highest security standards with SOC 2 Type II certification, end-to-end encryption, and regular security audits. Our platform complies with GDPR, CCPA, and other major data protection regulations.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
+                            <span class="font-semibold">Can your solutions integrate with our existing systems?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 4" class="p-6 pt-0">
+                            <p class="text-gray-400">Yes, our platform offers seamless integration with most major business systems including CRM, ERP, and marketing automation tools. We provide API access and custom integration support as needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="flex justify-between items-center w-full p-6 focus:outline-none">
+                            <span class="font-semibold">What is your pricing model?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-300" :class="{'rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="selected == 5" class="p-6 pt-0">
+                            <p class="text-gray-400">We offer flexible subscription plans based on your business size and needs. Custom pricing is available for enterprise solutions. Contact our sales team for a detailed quote tailored to your requirements.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="py-24 relative">
             <div class="container mx-auto px-6">
                 <div class="bg-gradient-to-r from-purple-900 to-pink-900 rounded-3xl p-12 relative overflow-hidden">
                     <div class="absolute inset-0 bg-gray-900 opacity-90"></div>
                     <div class="relative z-10 text-center">
                         <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
-                        <p class="text-xl text-gray-300 mb-8">Contact us today to get started with your custom solution</p>
+                        <p class="text-xl text-gray-300 mb-8">Join over 1000+ businesses already benefiting from our AI solutions</p>
                         <a href="mailto:sales@aibizbots4u.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                            Contact Us Now
+                            Schedule a Demo
                         </a>
                     </div>
                 </div>
@@ -160,35 +323,45 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">AiBizBots</h3>
-                    <p class="text-gray-400">Transforming businesses with custom AI solutions.</p>
+                    <p class="text-gray-400">Empowering businesses through intelligent automation solutions.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">sales@aibizbots4u.com</p>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://ihmunro.github.io/your-custom-app--no-hassle--just-results-2025-03-09-cuj41/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://ihmunro.github.io/your-custom-app--no-hassle--just-results-2025-03-09-cuj41/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/your-custom-app--no-hassle--just-results-2025-03-09-cuj41/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">sales@aibizbots4u.com</p>
+                    <div class="flex space-x-4 mt-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <span class="sr-only">Twitter</span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
+                            <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <!-- Add more social icons as needed -->
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -197,5 +370,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
